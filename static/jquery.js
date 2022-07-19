@@ -5,12 +5,22 @@ jQuery('#frm').validate({
         Correo: "required",
         Comentario: "required",
     }, menssages:{
-        Nombre: "Por favor, ingrese su nombre",
-        Apellido: "Por favor, ingrese su apellido",
+        Nombre: {
+            requerid: "Por favor, ingrese su nombre",
+            Nombre: "El campo Nombre es obligatorio",
+        },
+        Apellido: {
+            requerid: "Por favor, ingrese su apellido",
+            Apellido: "El campo Apellido es obligatorio",
+        },
         Correo:{
-            required: "Por favor, ingrese su correo",
+            required: "El campo de Correo Electronico es obligatorio",
             Correo: "Por favor, un correo valido",
         },
-        Comentario: "Por favor, ingrese su comentario"
+        Comentario: {
+            required: "Por favor, ingrese su comentario",
+            Comentario: "El campo Comentario es obligatorio"
+        },
     },
+
 })
